@@ -1,0 +1,31 @@
+.border_box {
+  margin-top: 1vw;
+  background-color: var(--color-mainColor);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 7.5% 100%, 0 92.5%);
+  display: flex;
+  margin-right: 2vw;
+  height: 350px;
+}
+.sponsor_box {
+  background-color: var(--color-divColor);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 7.5% 100%, 0 92.5%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  margin: 1px 1px 9px 9px;
+}
+.sponsor_box > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 35%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  .border_box {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.sidebar {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* padding-left: 20px; */
+}
+.sidebar_icon {
+  color: var(--color-mainColor);
+  font-size: 30px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    min-width: 50px;
+    margin-top: 0;
+    overflow: hidden;
+    padding-left: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sidebar_icon {
+    display: none;
+  }
+}

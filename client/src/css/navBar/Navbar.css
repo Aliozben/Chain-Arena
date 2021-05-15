@@ -1,0 +1,45 @@
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  padding: 0;
+  margin: 0;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-divColor);
+  position: fixed;
+  /* overflow: hidden; */
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  color: var(--color-mainColor);
+  font-weight: 900;
+  font-size: 30px;
+  cursor: pointer;
+}
+.button {
+  background-color: var(--color-mainColor);
+  flex: 0.2;
+  color: var(--color-white);
+  padding: 25px;
+  cursor: pointer;
+  min-width: fit-content;
+}
+.button_left {
+  clip-path: polygon(0 0, calc(100% - 8vh) 0%, 100% 100%, 0% 100%);
+  text-align: left;
+}
+.button_right {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 8vh 100%);
+  text-align: right;
+}
+.button:hover {
+  background-color: var(--color-white);
+  color: var(--color-mainColor);
+  transition: all 100ms ease-out;
+}

@@ -1,0 +1,7 @@
+.landing_page {
+  display: flex;
+  width: 100%;
+}
+.main_desc {
+  flex: 0.75;
+}

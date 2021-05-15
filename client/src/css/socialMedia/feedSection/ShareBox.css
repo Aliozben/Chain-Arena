@@ -1,0 +1,101 @@
+.shareBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--color-divColor);
+  width: 100%;
+}
+input {
+  display: none;
+}
+.file_container {
+  padding-left: 10px;
+}
+.file_container img {
+  /* border: none; */
+  border-radius: 10px;
+  border: 2px solid var(--color-altColorLight) !important;
+}
+.MuiAvatarGroup-avatar {
+  border-radius: 0px !important;
+  width: 75px !important;
+  height: 75px !important;
+  /* margin-left: 30px !important; */
+  margin-top: 10px;
+}
+.shareBox > form {
+  display: flex;
+  padding-right: 10px;
+  flex-direction: column;
+}
+.shareBox_input {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.textarea {
+  background-color: var(--color-background);
+  font-family: "Aldrich", sans-serif;
+  font-style: italic;
+  border: none;
+  flex: 1;
+  margin-left: 20px;
+  font-size: 15px;
+  color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  transition: all 300ms;
+  outline: none;
+  resize: none;
+}
+.shareBox_input > .textarea:focus {
+  border-bottom: 1px solid var(--color-mainColor);
+  transition: all 300ms;
+}
+.shareBox_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shareBox_icons {
+  color: var(--color-mainColor);
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon {
+  padding: 5px !important;
+  color: var(--color-mainColor) !important;
+}
+.icon:hover {
+  color: var(--color-altColor) !important;
+  background-color: var(--color-mainColor) !important;
+}
+.button_container {
+  background-color: var(--color-mainColor);
+  float: right !important;
+  height: 45px;
+  width: 30%;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+}
+.shareBox_shareButton {
+  background-color: var(--color-divColor) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  font-family: "Aldrich", sans-serif !important;
+  letter-spacing: 2.5px !important;
+  border-radius: 0px !important;
+  height: calc(100% - 2px) !important;
+  width: calc(100% - 2px) !important;
+  margin-right: 1px !important;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%) !important;
+  margin-top: 20 !important;
+  margin-left: auto !important;
+}
+.shareBox_shareButton:hover {
+  background-color: var(--color-altColor) !important;
+  color: var(--color-mainColor) !important;
+}

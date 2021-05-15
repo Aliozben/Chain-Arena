@@ -1,0 +1,33 @@
+* {
+  margin-top: 0;
+}
+body {
+  --color-mainColor: #17bf63;
+  --color-background: #0b0b11;
+  --color-divColor: #16151a;
+  --color-altColor: #15202b;
+  --color-altColorLight: #5f787b;
+  --color-white: #dcdcdc;
+}
+body {
+  background-color: var(--color-background);
+  font-family: "Aldrich", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  padding-top: 70px;
+}
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 0 0px;
+    padding-top: 70px;
+  }
+}

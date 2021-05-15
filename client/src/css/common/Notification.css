@@ -1,0 +1,8 @@
+.notification {
+  position: absolute;
+  background-color: aqua;
+  left: 1vw;
+  width: 100px !important;
+  height: 100px !important;
+  bottom: 100vh;
+}

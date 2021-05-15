@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input_container {
+  background-color: var(--color-altColor);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45px 100%);
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.input_div {
+  transition: rotate(40deg);
+  width: calc(100% - 45px);
+  height: 50px;
+  padding-top: 20px;
+  margin-left: 45px;
+}
+.input_div input {
+  font-size: 16px;
+  background: none;
+  width: 100%;
+  height: 100%;
+  color: var(--color-mainColor);
+  border: none;
+  outline: none;
+}
+.input_div label {
+  position: absolute;
+  color: var(--color-mainColor);
+  font-size: 20px;
+  bottom: 0px;
+  left: 45px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1.25px solid var(--color-white);
+}
+.input_div label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid var(--color-altColorLight);
+  left: 0;
+  bottom: -1px;
+  transform: translateX(-102%);
+  transition: transform 300ms ease;
+}
+.content_name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.input_div input:focus + .label_text .content_name,
+.input_div input:valid + .label_text .content_name {
+  font-size: 14px;
+  color: var(--color-altColorLight);
+  transform: translate(-28px, -150%);
+}
+.input_div input:focus + .label_text::after,
+.input_div input:valid + .label_text::after {
+  transform: translateX(-1%);
+}
