@@ -56,7 +56,14 @@ export const Login = ({setLoggedIn, setLoginWindow, loginWindow}: Props) => {
           <button type="submit">Login</button>
         </div>
         <div className="cancelBut">
-          <button onClick={() => setLoginWindow(false)}>Cancel</button>
+          <button
+            type="button"
+            onClick={() => {
+              setLoginWindow(false);
+            }}
+          >
+            Cancel
+          </button>
         </div>
       </div>
     </form>
