@@ -20,7 +20,7 @@ const Register = (props: Props) => {
     e.preventDefault();
     password != password2
       ? addToast("Passwords didn't match.", {appearance: "error"})
-      : Axios.post("http://localhost:3002/api/users/register", {
+      : Axios.post("https://chainarena.herokuapp.com/api/users/register", {
           username,
           password,
           displayName,
@@ -53,7 +53,7 @@ const Register = (props: Props) => {
         />
         <TextInput placeHolder="Display Name" onChange={setDisplayName} />
         <Button type="submit" className="register_button">
-          Sign In
+          Sign Up
         </Button>
       </form>
     </div>

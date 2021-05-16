@@ -22,7 +22,7 @@ export const Login = ({setLoggedIn, setLoginWindow, loginWindow}: Props) => {
 
   const handleLogin = async (e: FormEvent) => {
     e.preventDefault();
-    await Axios.post("http://localhost:3002/api/users/login", {
+    await Axios.post("https://chainarena.herokuapp.com/api/users/login", {
       username,
       password,
     })

@@ -7,7 +7,7 @@ interface Props {
 }
 const Navbar = ({loggedIn, setLoggedIn}: Props) => {
   const leftButtonName = loggedIn ? "Join To An Arena" : "Log In";
-  const rightButtonName = loggedIn ? "Create An Arena" : "Sign In";
+  const rightButtonName = loggedIn ? "Create An Arena" : "Sign Up";
   const [loginWindow, setLoginWindow] = useState(false);
   const handleloginWindow = () => {};
   const handleSearchArena = () => {};
