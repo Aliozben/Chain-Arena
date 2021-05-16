@@ -12,6 +12,7 @@ import LandingPage from "./landingPage/LandingPage";
 import AuthService from "./common/AuthService";
 import {PrivateRoute} from "./common/PrivateRoute";
 import {AUTH, DATABASE} from "../constants/index";
+import {TextInput} from "./common/TextInput";
 
 export const LogedContext = createContext<any>(null);
 
@@ -39,18 +40,18 @@ const App = () => {
           <Switch>
             <LogedContext.Provider value={setLoggedIn}>
               <PrivateRoute
-                redirectPath="/"
-                isAuth={loggedIn}
-                exact
-                path="/social"
-                component={SocialMedia}
-              />
-              <PrivateRoute
                 redirectPath="/social"
                 isAuth={!loggedIn}
                 exact
                 path="/"
                 component={LandingPage}
+              />
+              <PrivateRoute
+                redirectPath="/"
+                isAuth={loggedIn}
+                exact
+                path="/social"
+                component={SocialMedia}
               />
             </LogedContext.Provider>
           </Switch>

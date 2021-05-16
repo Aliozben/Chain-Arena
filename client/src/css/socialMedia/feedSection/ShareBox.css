@@ -3,7 +3,7 @@
   border-bottom: 8px solid var(--color-divColor);
   width: 100%;
 }
-input {
+.sharebBox > input {
   display: none;
 }
 .file_container {
