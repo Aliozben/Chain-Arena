@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     const token = authService.getToken();
-    Axios.get("https://chainarena.herokuapp.com/api/users/isAuth", {
+    Axios.get("/users/isAuth", {
       headers: {Aut: token},
     })
       .then((res: AxiosResponse) => {
