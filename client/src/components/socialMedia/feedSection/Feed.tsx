@@ -17,7 +17,7 @@ const Feed = ({}: Props): ReactElement => {
   const [posts, setPosts] = useState<types._Post[]>([]);
   useEffect(() => {
     (async () => {
-      const a: AxiosResponse = await axios.get("/api/social/feed");
+      const a: AxiosResponse = await axios.get("/social/feed");
       setPosts(
         a.data.map(
           (b: any) =>

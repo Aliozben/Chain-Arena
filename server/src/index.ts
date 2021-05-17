@@ -8,7 +8,11 @@ const db = pool;
 const dotenv = require("dotenv").config();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    exposedHeaders: "auth-token",
+  })
+);
 db.connect();
 app.use("/api/users", usersRouter);
 app.use("/api/social", socialRouter);
